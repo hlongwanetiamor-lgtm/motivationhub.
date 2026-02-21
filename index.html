@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation Hub | Daily Inspiration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <i class="fas fa-sparkles"></i>
+                    <h1>Motivation<span>Hub</span></h1>
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#categories" class="nav-link">Categories</a>
+                    <a href="#daily" class="nav-link">Daily Dose</a>
+                    <a href="#quotes" class="nav-link">Quotes</a>
+                    <a href="#challenges" class="nav-link">Challenges</a>
+                    <a href="#community" class="nav-link">Community</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="share-btn">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-tag">Daily Inspiration</span>
+                    <h1 class="hero-title">Fuel Your <span class="highlight">Ambition</span>,<br>Transform Your <span class="highlight">Life</span></h1>
+                    <p class="hero-subtitle">Personalized motivation for every aspect of your journey. Find daily inspiration tailored to your goals and challenges.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>5000+</h3>
+                            <p>Motivational Quotes</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24</h3>
+                            <p>Life Categories</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50K+</h3>
+                            <p>Inspired People</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="getInspiredBtn">
+                            <i class="fas fa-bolt"></i>
+                            Get Inspired Now
+                        </button>
+                        <button class="btn btn-secondary" id="exploreCategoriesBtn">
+                            <i class="fas fa-compass"></i>
+                            Explore Categories
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="quote-display active" id="mainQuote">
+                        <div class="quote-content">
+                            <p class="quote-text">"The only way to do great work is to love what you do."</p>
+                            <p class="quote-author">- Steve Jobs</p>
+                        </div>
+                        <div class="quote-category">
+                            <span>Career & Success</span>
+                        </div>
+                    </div>
+                    <div class="visual-effects">
+                        <div class="effect-circle"></div>
+                        <div class="effect-circle"></div>
+                        <div class="effect-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Find Your Motivation</span>
+                <h2 class="section-title">Browse by Category</h2>
+                <p class="section-subtitle">Select a category that matches your current focus area</p>
+            </div>
+            
+            <div class="categories-grid">
+                <!-- Career & Success -->
+                <div class="category-card" data-category="career">
+                    <div class="category-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Career & Success</h3>
+                    <p>Climb the ladder and achieve professional excellence</p>
+                    <div class="category-stats">
+                        <span><i class="fas fa-quote-left"></i> 450 quotes</span>
+                        <span><i class="fas fa-users"></i> Active</span>
+                    </div>
+                </div>
+                
+                <!-- Health & Fitness -->
+                <div class="category-card" data-category="health">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health & Fitness</h3>
+                    <p>Transform your body and mind for optimal wellness</p>
+                    <div class="category-stats">
+                        <span><i class="fas fa-quote-left"></i> 380 quotes</span>
+                        <span><i class="fas fa-users"></i> Active</span>
+                    </div>
+                </div>
+                
+                <!-- Personal Growth -->
+                <div class="category-card" data-category="growth">
+                    <div class="category-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Personal Growth</h3>
+                    <p>Become the best version of yourself</p>
+                    <div class="category-stats">
+                        <span><i class="fas fa-quote-left"></i> 520 quotes</span>
+                        <span><i class="fas fa-users"></i> Active</span>
+                    </div>
+                </div>
+                
+                <!-- Relationships -->
+                <div class="category-card" data-category="relationships">
+                    <div class="category-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Relationships</h3>
+                    <p>Build meaningful connections with others</p>
+                    <div class="category-stats">
+                        <span><i class="fas fa-quote-left"></i> 320 quotes</span>
+                        <span><i class="fas fa-users"></i> Active</span>
+                    </div>
+                </div>
+                
+                <!-- Wealth & Finance -->
+                <div class="category-card" data-category="finance">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Wealth & Finance</h3>
+                    <p>Build wealth and achieve financial freedom</p>
+                    <div class="category-stats">
+                        <span><i class="fas fa-quote-left"></i> 290 quotes</span>
+                        <span><i class="fas fa-users"></i> Active</span>
+                    </div>
+                </div>
+                
+                <!-- Mental Health -->
+                <div class="category-card" data-category="mental">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Mental Health</h3>
+                    <p>Find peace, balance, and emotional strength</p>
+                    <div class="category-stats">
+                        <span><i class="fas fa-quote-left"></i> 410 quotes</span>
+                        <span><i class="fas fa-users"></i> Active</span>
+                    </div>
+                </div>
+                
+                <!-- Creativity -->
+                <div class="category-card" data-category="creativity">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Creativity</h3>
+                    <p>Unlock your creative potential and innovate</p>
+                    <div class="category-stats">
+                        <span><i class="fas fa-quote-left"></i> 270 quotes</span>
+                        <span><i class="fas fa-users"></i> Active</span>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div class="category-card" data-category="education">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education & Learning</h3>
+                    <p>Fuel your curiosity and expand your knowledge</p>
+                    <div class="category-stats">
+                        <span><i class="fas fa-quote-left"></i> 340 quotes</span>
+                        <span><i class="fas fa-users"></i> Active</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivation Generator -->
+    <section class="generator" id="daily">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Daily Dose</span>
+                <h2 class="section-title">Get Personalized Motivation</h2>
+                <p class="section-subtitle">Select your current mood and receive tailored inspiration</p>
+            </div>
+            
+            <div class="generator-content">
+                <div class="mood-selector">
+                    <h3>How are you feeling today?</h3>
+                    <div class="mood-buttons">
+                        <button class="mood-btn" data-mood="energized">
+                            <i class="fas fa-bolt"></i>
+                            <span>Energized</span>
+                        </button>
+                        <button class="mood-btn" data-mood="focused">
+                            <i class="fas fa-bullseye"></i>
+                            <span>Focused</span>
+                        </button>
+                        <button class="mood-btn" data-mood="challenged">
+                            <i class="fas fa-mountain"></i>
+                            <span>Challenged</span>
+                        </button>
+                        <button class="mood-btn" data-mood="stressed">
+                            <i class="fas fa-cloud"></i>
+                            <span>Stressed</span>
+                        </button>
+                        <button class="mood-btn" data-mood="unmotivated">
+                            <i class="fas fa-tired"></i>
+                            <span>Unmotivated</span>
+                        </button>
+                        <button class="mood-btn" data-mood="balanced">
+                            <i class="fas fa-balance-scale"></i>
+                            <span>Balanced</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="motivation-output">
+                    <div class="output-header">
+                        <h3>Your Daily Motivation</h3>
+                        <div class="output-actions">
+                            <button class="action-btn" id="saveQuoteBtn">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                            <button class="action-btn" id="shareQuoteBtn">
+                                <i class="fas fa-share"></i>
+                            </button>
+                            <button class="action-btn" id="newQuoteBtn">
+                                <i class="fas fa-redo"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="quote-container">
+                        <div class="quote-card active" id="currentQuote">
+                            <p class="quote-text">"Believe you can and you're halfway there."</p>
+                            <p class="quote-author">- Theodore Roosevelt</p>
+                            <div class="quote-category-tag">
+                                <i class="fas fa-tag"></i>
+                                <span>Personal Growth</span>
+                            </div>
+                        </div>
+                        
+                        <div class="quote-tips">
+                            <h4>Today's Action Tip:</h4>
+                            <p id="actionTip">Take 5 minutes to visualize your success. Close your eyes and see yourself achieving your goals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote of the Day -->
+    <section class="quote-of-day" id="quotes">
+        <div class="container">
+            <div class="quote-day-content">
+                <div class="quote-day-header">
+                    <span class="day-label">
+                        <i class="far fa-calendar-alt"></i>
+                        Quote of the Day
+                    </span>
+                    <h2>Today's Wisdom</h2>
+                </div>
+                
+                <div class="quote-day-card">
+                    <div class="quote-day-text">
+                        <i class="fas fa-quote-left quote-start"></i>
+                        <p id="todaysQuote">"The future belongs to those who believe in the beauty of their dreams."</p>
+                        <i class="fas fa-quote-right quote-end"></i>
+                    </div>
+                    
+                    <div class="quote-day-author">
+                        <div class="author-info">
+                            <h4 id="todaysAuthor">Eleanor Roosevelt</h4>
+                            <p id="todaysCategory">Inspiration & Dreams</p>
+                        </div>
+                        <div class="author-actions">
+                            <button class="btn btn-small" id="copyQuoteBtn">
+                                <i class="far fa-copy"></i>
+                                Copy
+                            </button>
+                            <button class="btn btn-small" id="saveDayQuoteBtn">
+                                <i class="far fa-heart"></i>
+                                Save
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section class="challenges" id="challenges">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Take Action</span>
+                <h2 class="section-title">7-Day Motivation Challenges</h2>
+                <p class="section-subtitle">Small daily actions that create big changes</p>
+            </div>
+            
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <span class="challenge-difficulty easy">Beginner</span>
+                        <h3>Gratitude Challenge</h3>
+                    </div>
+                    <p>Write down 3 things you're grateful for every day for 7 days</p>
+                    <div class="challenge-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 28%"></div>
+                        </div>
+                        <span>2/7 days completed</span>
+                    </div>
+                    <button class="btn btn-challenge">Join Challenge</button>
+                </div>
+                
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <span class="challenge-difficulty medium">Intermediate</span>
+                        <h3>Morning Power Hour</h3>
+                    </div>
+                    <p>Dedicate the first hour of your day to self-improvement</p>
+                    <div class="challenge-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <span>Start today</span>
+                    </div>
+                    <button class="btn btn-challenge">Join Challenge</button>
+                </div>
+                
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <span class="challenge-difficulty hard">Advanced</span>
+                        <h3>Digital Detox</h3>
+                    </div>
+                    <p>Reduce screen time by 50% and reconnect with yourself</p>
+                    <div class="challenge-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 71%"></div>
+                        </div>
+                        <span>5/7 days completed</span>
+                    </div>
+                    <button class="btn btn-challenge">Join Challenge</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community" id="community">
+        <div class="container">
+            <div class="community-content">
+                <div class="community-text">
+                    <span class="section-label">Together We Grow</span>
+                    <h2 class="section-title">Join Our Motivation Community</h2>
+                    <p class="community-description">
+                        Share your journey, get support, and inspire others. Thousands of people are transforming their lives together.
+                    </p>
+                    
+                    <div class="community-features">
+                        <div class="community-feature">
+                            <i class="fas fa-comments"></i>
+                            <div>
+                                <h4>Daily Discussions</h4>
+                                <p>Share wins and challenges</p>
+                            </div>
+                        </div>
+                        
+                        <div class="community-feature">
+                            <i class="fas fa-hands-helping"></i>
+                            <div>
+                                <h4>Accountability Partners</h4>
+                                <p>Stay motivated together</p>
+                            </div>
+                        </div>
+                        
+                        <div class="community-feature">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h4>Progress Tracking</h4>
+                                <p>Celebrate milestones</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary">
+                        <i class="fas fa-users"></i>
+                        Join Community
+                    </button>
+                </div>
+                
+                <div class="community-visual">
+                    <div class="testimonial-slider">
+                        <div class="testimonial active">
+                            <p class="testimonial-text">"This platform changed my daily routine. I'm more productive and happier than ever!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar"></div>
+                                <div class="author-info">
+                                    <h4>Alex Morgan</h4>
+                                    <p>45-day streak</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-sparkles"></i>
+                        <h3>Motivation<span>Hub</span></h3>
+                    </div>
+                    <p class="footer-description">
+                        Your daily source of inspiration and motivation for every aspect of life.
+                    </p>
+                    
+                    <div class="newsletter">
+                        <h4>Get Daily Motivation</h4>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button class="btn btn-small">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> Career & Success</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> Health & Fitness</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> Personal Growth</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> Relationships</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> Daily Quotes</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> Challenges</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> Community</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i> Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    
+                    <div class="app-download">
+                        <h5>Get the App</h5>
+                        <div class="app-buttons">
+                            <button class="app-btn">
+                                <i class="fab fa-apple"></i>
+                                App Store
+                            </button>
+                            <button class="app-btn">
+                                <i class="fab fa-google-play"></i>
+                                Play Store
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Motivation Hub. All rights reserved.</p>
+                just an experimental site by tiamor  ❤💋✔
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="categoryModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body" id="categoryModalBody">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span class="toast-message">Quote saved successfully!</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
